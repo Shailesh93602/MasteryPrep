@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3498db;
+    padding: 10px;
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        li {
+            margin-left: 2rem;
+            .link {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+            .link:hover {
+                text-decoration: underline;
+                color:black;
+            }
+            .active {
+                color: black;
+            }
+        }
+    }
+}
