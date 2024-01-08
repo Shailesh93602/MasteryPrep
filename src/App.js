@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/oops/*" element={<Oop selectedTopic="null" />} />
+        <Route path="/oops/*" element={<Oop selectedTopic="Introduction" />} />
         <Route path="/dsa/*" element={<Dsa selectedTopic="null" />} />
         <Route path="/sql/*" element={<Sql selectedTopic="null" />} />
         <Route path="/ps/*" element={<Ps selectedTopic="null" />} />

@@ -12,7 +12,7 @@ const Components = Object.fromEntries(
 );
 
 const Dsa = () => {
-  const [selectedTopic, setSelectedTopic] = useState(null);
+  const [selectedTopic, setSelectedTopic] = useState('Introduction');
 
   const handleTopicClick = (topic) => {
     topic = topic.replace(/\s+/g, ''); 

@@ -13,13 +13,12 @@ const topicFilenameMap = {
     'Advanced Topics': 'AdvancedTopics',
 };
 
-// Import all PS components dynamically
 const Components = Object.fromEntries(
   topics.map((topic) => [topic.replace(/\s+/g, ''), lazy(() => import(`../components/PS/${topicFilenameMap[topic] || topic}`))])
 );
 
 const Ps = () => {
-  const [selectedTopic, setSelectedTopic] = useState(null);
+  const [selectedTopic, setSelectedTopic] = useState('Introduction');
 
   const handleTopicClick = (topic) => {
     setSelectedTopic(topic.replace(/\s+/g, '')); 

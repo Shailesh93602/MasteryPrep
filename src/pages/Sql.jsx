@@ -1,27 +1,24 @@
 import React, { lazy, Suspense, useState } from 'react';
 import TopicsMenu from '../components/TopicsMenu';
-import '../styles/Oop.css'; // Adjust the path accordingly
+import '../styles/Oop.css'; 
 
 const topics = ['Introduction', 'Query Basics', 'Joins', 'Subqueries', 'Indexes', 'Stored Procedures', 'Transactions', 'Normalization', 'Views', 'Triggers', 'Performance Optimization', 'Security'];
 
-// Create a mapping between topic names with spaces and filenames without spaces
 const topicFilenameMap = {
   'Query Basics': 'QueryBasics',
   'Stored Procedures': 'StoredProcedures',
   'Performance Optimization': 'PerformanceOptimization',
-  // Add mappings for other topics
 };
 
-// Import all SQL components dynamically
 const Components = Object.fromEntries(
   topics.map((topic) => [topic.replace(/\s+/g, ''), lazy(() => import(`../components/Sql/${topicFilenameMap[topic] || topic}`))])
 );
 
 const Sql = () => {
-  const [selectedTopic, setSelectedTopic] = useState(null);
+  const [selectedTopic, setSelectedTopic] = useState('Introduction');
 
   const handleTopicClick = (topic) => {
-    topic = topic.replace(/\s+/g, ''); // Remove spaces for topic selection
+    topic = topic.replace(/\s+/g, ''); 
     setSelectedTopic(topic);
   };
 
