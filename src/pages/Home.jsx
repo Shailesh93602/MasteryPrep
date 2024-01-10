@@ -14,7 +14,7 @@ const Home = () => {
         <h2>Explore Popular Topics</h2>
         <Link to="/oops">Object-Oriented Programming</Link> <br />
         <Link to="/dsa">Data Structure and Algorithms</Link> <br />
-        <Link to="/sql">Structured Query Language</Link> <br />
+        <Link to="/sql">Database Management System</Link> <br />
         <Link to="/ps">Problem Solving</Link> <br />
         <Link to="/ciq">Common Interview Questions</Link> <br />
       </section>
@@ -36,7 +36,10 @@ const Home = () => {
       <section className="latest-updates">
         <h2>Latest Updates</h2>
         <Link to="/dsa" className="cta-button">
-          Learn Dsa
+          Learn Data Structures
+        </Link> <br />
+        <Link to="/ciq" className="cta-button">
+          Common Interview Questions.
         </Link>
       </section>
 
