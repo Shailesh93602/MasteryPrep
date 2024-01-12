@@ -1,7 +1,7 @@
 .topic-content {
   margin: 20px;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
@@ -10,6 +10,10 @@
   color: #333;
   font-size: 2rem;
   margin-bottom: 10px;
+}
+
+.topic-content h3 {
+  padding-top: 8px
 }
 
 .topic-content p {
@@ -53,4 +57,13 @@ code {
   border-radius: 5px;
   font-family: 'Courier New', monospace;
   font-size: 0.9rem;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: none;  
+  border-radius: 50%;
 }

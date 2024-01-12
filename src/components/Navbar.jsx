@@ -8,7 +8,6 @@ const Navbar = () => {
     const { isAuthenticated, logout } = useContext(AuthContext);
 
     const handleLogout = () => {
-        // Call the logout function from AuthContext
         logout();
     };
 
@@ -33,7 +32,7 @@ const Navbar = () => {
                 ))}
             </ul>
             {isAuthenticated ? (
-                <Link className="auth-button" to="/logout" onClick={handleLogout}>
+                <Link className="auth-button" to="/" onClick={handleLogout}>
                     Logout
                 </Link>
             ) : (

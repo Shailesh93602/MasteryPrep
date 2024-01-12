@@ -18,19 +18,24 @@ const Objects = () => {
         instantiation.
       </p>
       <p>Example:</p>
-      <pre>
-          {`class Dog {
-  constructor(name, breed) {
-    this.name = name;
-    this.breed = breed;
-  }
-  bark() {
-    console.log('Woof woof!');
-  }
-}
-const myPet = new Dog('Buddy', 'Golden Retriever');
-myPet.bark(); // Outputs: Woof woof!`}
-      </pre>
+      <pre>{`
+      class Dog {
+        public: 
+          string name;
+          string breed;
+          Dog(name, breed) {
+            this.name = name;
+            this.breed = breed;
+          }
+          bark() {
+            cout <<"Bhau..." <<endl;
+          }
+      };
+      int main() {
+        Dog dog = new Dog("Monty", "Golden Retriever");
+        dog.bark(); // prints: Bhau...
+      }
+      `}</pre>
 
       <h2>2. Object Properties</h2>
       <p>

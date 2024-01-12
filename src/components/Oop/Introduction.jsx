@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/Topic.css";
+import OopsConcepts from '../../assets/images/OOPs-Concepts.jpg';
 
 const Introduction = () => {
   return (
@@ -13,10 +14,10 @@ const Introduction = () => {
       </p>
       <p>
         Imagine your code as a collection of objects, each with a specific role
-        and a set of instructions. Let's explore some key concepts that make OOP
-        a powerful and flexible way to create software:
+        and a set of instructions. <i>Let's explore some key concepts that make OOP
+        a powerful and flexible way to create software:</i>
       </p>
-
+      <img src={OopsConcepts} alt="OOPs concepts" />
       <h2>1. Classes and Objects</h2>
       <p>
         In OOP, we create 'Classes' that act as{" "}

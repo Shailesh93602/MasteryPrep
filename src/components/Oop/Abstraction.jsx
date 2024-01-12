@@ -1,5 +1,5 @@
-import React from 'react';
-import '../../styles/Topic.css';
+import React from "react";
+import "../../styles/Topic.css";
 
 const Abstraction = () => {
   return (
@@ -15,8 +15,8 @@ const Abstraction = () => {
       <h2>1. Abstract Classes</h2>
       <p>
         Abstract classes cannot be instantiated on their own and serve as a
-        blueprint for other classes. They may contain abstract methods that
-        must be implemented by derived classes.
+        blueprint for other classes. They may contain abstract methods that must
+        be implemented by derived classes.
       </p>
 
       <h2>2. Abstract Methods</h2>
@@ -43,8 +43,8 @@ const Abstraction = () => {
       <p>
         Abstraction simplifies complex systems, reduces code redundancy, and
         enhances code maintainability. It allows developers to work at higher
-        levels of abstraction, focusing on what needs to be done rather than
-        how it's done.
+        levels of abstraction, focusing on what needs to be done rather than how
+        it's done.
       </p>
 
       <h2>6. Abstraction Example</h2>
@@ -52,38 +52,33 @@ const Abstraction = () => {
         Here's a simple example of abstraction using an abstract class and an
         interface to model different shapes:
       </p>
-      <pre>
-        {`abstract class Shape {
-  abstract calculateArea(): number;
-}
-
-interface Colorable {
-  getColor(): string;
-}
-
-class Circle extends Shape implements Colorable {
-  private radius: number;
-  private color: string;
-
-  constructor(radius: number, color: string) {
-    super();
-    this.radius = radius;
-    this.color = color;
-  }
-
-  calculateArea(): number {
-    return Math.PI * this.radius ** 2;
-  }
-
-  getColor(): string {
-    return this.color;
-  }
-}
-
-const circle = new Circle(5, 'red');
-console.log('Area:', circle.calculateArea());
-console.log('Color:', circle.getColor());`}
-      </pre>
+      <pre>{`
+      class Rectangle {
+        private:
+          int length, width;
+        public:
+          void set(int x, int y){
+            length = x;
+            width = y;
+          }
+          void display(){
+            cout << "length = " <<length << endl;
+            cout << "width = " <<width << endl;
+          }
+      };
+      int main(){
+        Rectangle r;
+        r.set(10, 20);
+        r.display();
+        return 0;
+      }
+  `}</pre>
+      <p>
+        Here we are not allowed to access the variables length and width
+        directly, however, we can call the function <code>set()</code> to set
+        the values of length and width and the function <code>display()</code>{" "}
+        to print the values of length and width.
+      </p>
     </div>
   );
 };

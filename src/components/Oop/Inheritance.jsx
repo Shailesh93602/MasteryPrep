@@ -7,12 +7,21 @@ const Inheritance = () => {
       <h1>Inheritance in Object-Oriented Programming (OOP)</h1>
       <p>
         Inheritance is a fundamental concept in OOP that allows a class
-        (subclass) to inherit properties and methods from another class
-        (superclass). It promotes code reuse and establishes an "is-a"
-        relationship between classes. Let's explore the important aspects
-        of inheritance:
+        <code>(subclass)</code> to inherit properties and methods from another class
+        <code>(superclass)</code>. It promotes code reuse and establishes an "is-a"
+        relationship between classes. 
       </p>
-
+      <p>
+        Inheritance is an important pillar of OOP (Object-Oriented
+        Programming). The capability of a class to derive properties and
+        characteristics from another class is called Inheritance. When we
+        write a class, we inherit properties from other classes. So when we
+        create a class, we do not need to write all the properties and
+        functions again and again, as these can be inherited from another
+        class that possesses them. Inheritance allows the user to reuse the
+        code whenever possible and reduce its redundancy.
+      </p>
+      <b>Let's explore the important aspects of inheritance:</b>
       <h2>1. Base Class (Superclass)</h2>
       <p>
         The base class, also known as the superclass or parent class, is the
@@ -58,17 +67,13 @@ const Inheritance = () => {
         Inheritance enables polymorphism, allowing objects of the subclass
         to be used wherever objects of the superclass are expected.
       </p>
-
+      <h2>8. Inheritance Example:</h2>
       <p>
-        Inheritance is an important pillar of OOP (Object-Oriented
-        Programming). The capability of a class to derive properties and
-        characteristics from another class is called Inheritance. When we
-        write a class, we inherit properties from other classes. So when we
-        create a class, we do not need to write all the properties and
-        functions again and again, as these can be inherited from another
-        class that possesses them. Inheritance allows the user to reuse the
-        code whenever possible and reduce its redundancy.
+        Here's is a simaple example of Inheritance:
       </p>
+      <pre>{`
+      
+      `}</pre>
     </div>
   );
 };
