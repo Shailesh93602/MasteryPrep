@@ -2,11 +2,12 @@ import React, { lazy, Suspense, useState } from 'react';
 import TopicsMenu from '../components/TopicsMenu';
 import '../styles/Oop.css';
 
-const topics = ['Introduction', 'Classes', 'Objects', 'Abstraction', 'Encapsulation', 'Inheritance', 'Polymorphism', 'Dynamic Binding', 'Message Parsing'];
+const topics = ['Introduction', 'Classes', 'Members', 'Constructors', 'Access Modifiers', 'Objects', 'Abstraction', 'Encapsulation', 'Inheritance', 'Polymorphism', 'Dynamic Binding', 'Message Parsing'];
 
 const topicFilenameMap = {
   'Dynamic Binding': 'DynamicBinding',
   'Message Parsing': 'MessageParsing',
+  'Access Modifiers': 'AccessModifiers',
 };
 
 const Components = Object.fromEntries(

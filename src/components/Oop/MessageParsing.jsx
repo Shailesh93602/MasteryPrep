@@ -45,6 +45,9 @@ const MessagePassing = () => {
         promoting code reusability and maintainability. Message passing is
         essential for achieving polymorphism and dynamic binding in OOP.
       </p>
+      <p>
+      Happy learning about Message Parsing!
+      </p>
     </div>
   );
 };

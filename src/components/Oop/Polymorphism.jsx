@@ -70,6 +70,9 @@ const Polymorphism = () => {
         husband, an employee. So the same person possesses different behavior
         in different situations. This is called polymorphism.
       </p>
+      <p>
+      Happy learning about Polymorphism!
+      </p>
     </div>
   );
 };

@@ -10,47 +10,72 @@ const LinkedList = () => {
         together through links. Each node contains data and a reference (or link) to the next node
         in the sequence.
       </p>
-      <p>
-        <b>Declaration:</b>
-      </p>
+      <h3>1. Declaration</h3>
       <p>
         To declare a linked list, you define a node structure and maintain a reference to the
         first node, often called the head.
       </p>
-      <pre>
-        {`// Node structure
-class Node {
-  constructor(data, next = null) {
-    this.data = data;
-    this.next = next;
-  }
-}
-
-// Linked List declaration
-let head = new Node(1);
-let secondNode = new Node(2);
-head.next = secondNode;`}
-      </pre>
+      <pre>{`
+        //Node class to to represent a node of the linked list
+        class Node {
+          public:
+            int data;
+            Node* next;
+            //Default Constructor
+            Node() {
+              data = 0;
+              next = NULL;
+            }
+            //Parameterized Constructor
+            Node(int data) {
+              this->data = data;
+              this->next = NULL;
+            }
+        };
+        //LinkedList class to implement a linked list.
+        class LinkedList {
+          Node* head;
+          public:
+            LinkedList() {
+              head = NULL;
+            }
+            void insertNode(int);
+            void printList();
+            void deleteNode(int);
+        };
+        int main() {
+          LinkedList list;
+        }
+      `}</pre>
+      <h3>2. Operations</h3>
       <p>
-        <b>Operations:</b>
+        Linked lists support operations like insertion, deletion, and traversal.<i>Here's an example
+        of inserting a new node at the end of the linked list: </i>
       </p>
-      <p>
-        Linked lists support operations like insertion, deletion, and traversal. Here's an example
-        of inserting a new node at the end of the linked list:
-      </p>
-      <pre>
-        {`// Insertion at the end
-function insertAtEnd(data) {
-  let newNode = new Node(data);
-  let current = head;
+      <pre>{`
+        //insertion 
+        void LinkedList::insertNode(int data) {
+          Node* newNode = new Node(data);
+          if(head == NULL) {
+            head = newNode;
+            return;
+          }
+          Node* temp = head;
+          while(temp->next != NULL) {
+            temp = temp->next;
+          }
+          temp->next = newNode;
+        };
+        int main() {
+          LinkedList list;
+          list.insertNode(1);
+          list.insertNode(2);
+          list.insertNode(3);
+          list.insertNode(4);
+          list.insertNode(5);
+        }
 
-  while (current.next !== null) {
-    current = current.next;
-  }
-
-  current.next = newNode;
-}`}
-      </pre>
+      `}</pre>
       <p>
         Linked lists offer advantages in dynamic memory allocation and efficient insertion/deletion
         but have trade-offs in terms of access time compared to arrays.

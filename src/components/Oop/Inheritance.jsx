@@ -74,6 +74,9 @@ const Inheritance = () => {
       <pre>{`
       
       `}</pre>
+      <p>
+      Happy learning about Inheritance!
+      </p>
     </div>
   );
 };

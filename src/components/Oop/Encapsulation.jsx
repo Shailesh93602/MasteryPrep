@@ -92,6 +92,9 @@ const Encapsulation = () => {
         cout <<ans <<endl;
       }
       `}</pre>
+      <p>
+      Happy learning about Encapsulation!
+      </p>
     </div>
   );
 };

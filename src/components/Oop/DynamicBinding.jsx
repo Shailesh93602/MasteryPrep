@@ -26,6 +26,9 @@ const DynamicBinding = () => {
         about method implementation to be made at runtime. This is in contrast
         to static binding, where such decisions are made at compile time.
       </p>
+      <p>
+      Happy learning about Dynamic Binding!
+      </p>
     </div>
   );
 };

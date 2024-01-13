@@ -54,64 +54,11 @@ const Classes = () => {
           int getMaxSpeed() {
             return maxSpeed;
           }
-      };`}</pre>
-      <h2>Key Concepts Related to Classes</h2>
-      <h3>1. Members (Attributes and Methods)</h3>
-      <p>
-        Class members include attributes (properties) and methods (functions).
-        Attributes represent the state of the object, while methods define its
-        behavior.
-      </p>
-      <h3>2. Constructors</h3>
-      <p>
-        Constructors are special methods called when an object is instantiated.
-        They initialize the object's state. In JavaScript, the constructor is
-        defined using the <code>constructor</code> method.
-      </p>
-      <h3>3. Access Modifiers</h3>
-      <p>
-        Access modifiers control the visibility of class members. Common access
-        modifiers include:
-      </p>
-      <ul>
-        <li>
-          <code>public</code>: Accessible from anywhere.
-        </li>
-        <li>
-          <code>private</code>: Accessible only within the class.
-        </li>
-        <li>
-          <code>protected</code>: Accessible within the class and its
-          subclasses.
-        </li>
-      </ul>
-
-      <h3>4. Static Members</h3>
-      <p>
-        Static members belong to the class rather than instances. They are
-        accessed using the class name and can be shared among all instances.
-      </p>
-
-      <h3>Example:</h3>
-      <pre>{`
-      class Rectangle {
-        private: //access modifier
-          int length; // attribute or property
-          int width;
-        public:  //access modifier
-          Rectangle(int l, int b) { // Constructor
-            length = l;
-            width = b;
-          }
-          void set(int l, int b) { // method or function
-            length = l;
-            width = b;
-          }
-          void display() {
-            cout <<length <<" " <<width <<endl;
-          }
       };
       `}</pre>
+      <p>
+      Happy learning about Classes!
+      </p>
     </div>
   );
 };
