@@ -10,7 +10,7 @@ const Signup = () => {
 
   const handleSignup = async () => {
     try {
-      const response = await fetch("http://localhost:5000/register", {
+      const response = await fetch("https://masteryprep.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
