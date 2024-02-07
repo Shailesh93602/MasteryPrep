@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  overflow-y: hidden;
+}
 
 .content-container {
     display: grid;
@@ -13,9 +16,15 @@
       border: 1px solid #ccc;
       /* border-radius: 5px; */
       background-color: white;
+      /* width: calc(100% - 200px); */
+      height: calc(100vh - 10px);
+      overflow-y: auto;
     }
     .topics-menu {
       /* padding: 10px; */
+      /* width: calc(100% - 200px); */
+      /* height: calc(100vh - 10px); */
+      overflow-y: auto;
       background-color: #f0f0f0;
       border-radius: 5px;
       ul {
